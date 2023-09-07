@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>What's the weather ?</title>
+    <title>Weathersense</title>
     <link rel="stylesheet" href="styles.css" />
     <script
       src="https://kit.fontawesome.com/c5194eabb0.js"
@@ -13,23 +13,38 @@
   <body>
     <section class="weather-dashboard">
       <div class="left-dashboard">
-        <div class="dash">
-          <i class="fa-solid fa-house"></i><a href="#">Home</a>
+        <div class="dash-logo">
+          <i class="fa-brands fa-skyatlas fa-3x"></i>
+          <h3>Weathersense</h3>
         </div>
         <div class="dash">
-          <i class="fa-solid fa-smog"></i><a href="#">Forecast</a>
+          <i class="fa-solid fa-house fa-2x"></i><a href="#">Home</a>
         </div>
         <div class="dash">
-          <i class="fa-solid fa-compass"></i><a href="#">Locations</a>
+          <i class="fa-solid fa-smog fa-2x"></i><a href="#">Forecast</a>
         </div>
         <div class="dash">
-          <i class="fa-regular fa-calendar-days"></i><a href="#">Calender</a>
+          <i class="fa-solid fa-compass fa-2x"></i><a href="#">Locations</a>
         </div>
         <div class="dash">
-          <i class="fa-solid fa-gear"></i><a href="#">Settings</a>
+          <i class="fa-regular fa-calendar-days fa-2x"></i
+          ><a href="#">Calender</a>
+        </div>
+        <div class="dash">
+          <i class="fa-solid fa-gear fa-2x"></i><a href="#">Settings</a>
         </div>
       </div>
-      <div class="right-dashboard"></div>
+      <div class="right-dashboard">
+        <div class="header">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input
+            class="search"
+            type="search"
+            placeholder="search for a city..."
+          />
+        </div>
+        <div class="nav"></div>
+      </div>
     </section>
     <script src="app.js"></script>
   </body>

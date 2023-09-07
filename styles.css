@@ -3,3 +3,30 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.weather-dashboard{
+    display: flex;
+}
+
+.left-dashboard{
+    flex: 1;
+}
+
+.right-dashboard{
+    flex: 2;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    border: 1px solid #eee;
+    max-width: 400px;
+    display: block;
+    padding: 10px 4px 10px 40px;
+    border-radius: 20px;
+}
+
+input.search{
+    border: none;
+    outline: none;
+}
