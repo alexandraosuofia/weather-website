@@ -1,0 +1,3 @@
+embed openweather api
+
+gather data for date,time, timezone, country
