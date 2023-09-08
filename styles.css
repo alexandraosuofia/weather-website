@@ -9,24 +9,44 @@
 }
 
 .left-dashboard{
-    flex: 1;
+    flex: 0.1;
+    background-color: blue;
+    height: 100vh;
+    padding: 10px;
+    border-radius: 0 10px 0 0;
 }
 
 .right-dashboard{
     flex: 2;
 }
 
+.dash-logo i, .dash-logo h3{
+    color: white;
+}
+
+.dash a{
+    color: white;
+    display: block;
+    padding: 15px;
+}
+
 .header{
     display: flex;
     align-items: center;
     border: 1px solid #eee;
-    max-width: 400px;
+    max-width: 350px;
     display: block;
     padding: 10px 4px 10px 40px;
     border-radius: 20px;
+    margin: 15px auto;
 }
 
+.header i{
+    margin-right: 10px;
+}
 input.search{
     border: none;
     outline: none;
+    width: 80%;
+    cursor: pointer;
 }
