@@ -36,7 +36,10 @@
     background-size: cover;
 }
 
-.dash-logo i,
+.dash-logo i{
+    color: white;
+}
+
 .dash-logo h3,
 .dash a {
     background-image: url('images/weather.jpg');
