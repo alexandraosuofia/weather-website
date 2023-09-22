@@ -1,15 +1,15 @@
 const searchEl = document.querySelector('.search');
 const countryEl = document.querySelector('.country');
-const tempEl = document.querySelector('.temp');
+const tempEl = document.querySelector('.temp-bold');
 const descEl = document.querySelector('.desc');
 const timeEl = document.querySelector('#time');
 const ampm = document.querySelector('#am-pm');
 const dateEl = document.querySelector('#date');
 const currentWeatherItemsEl = document.querySelector('#current-weather-items');
 const forecastEl = document.querySelector('#forecast');
-const feelsLikeEl = document.querySelector('feels-like-bold');
-const airQualityEl = document.querySelector('.air-quality-icon');
-const uvEl = document.querySelector('uv-index-icon');
+const feelsLikeEl = document.querySelector('.feels-like-bold');
+const sunriseEl = document.querySelector('.sunrise-icon');
+const sunsetEl = document.querySelector('.sunset-icon');
 const humidityEl = document.querySelector('#humidity');
 const windSpeedEl = document.querySelector('#wind-speed');
 
@@ -59,7 +59,7 @@ fetch(api)
            .then(response => response.json())
 .then(data => {
     console.log(data);
-    // showWeatherData(data);
+    showWeatherData(data);
 }) 
 
         }); 
@@ -71,10 +71,18 @@ fetch(api)
     getWeatherData();
 
 
-// function showWeatherData(data){
-//     let {humidity, temperature, feels_like, pressure, sunrise, sunset} = data.main;
-// humidityEl.textContent = humidity;
+function showWeatherData(data){
+    // let {humidity, temperature, feels_like, pressure, sunrise, sunset} = data.main;
+    countryEl.textContent = data.name;
+    descEl.textContent = data.weather[0].description;
+humidityEl.textContent = data.main.humidity + "%";
+tempEl.textContent = data.main.temp;
+feelsLikeEl.textContent = data.main.feels_like;
+windSpeedEl.textContent = data.wind.speed + "mph";
+sunriseEl.textContent = `${window.moment(data.sys.sunrise * 1000).format('HH:mm a')}`;
+sunsetEl.textContent = `${window.moment(data.sys.sunset * 1000).format('HH:mm a')}`;
 
-//     let {country} = data.name;
-//     countryEl.textContent = country;
-// }
+
+// sunriseEl.textContent = data.sys.sunrise(${window.moment.format('HH:mm:a')});
+
+}

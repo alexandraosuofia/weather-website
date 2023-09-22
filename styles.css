@@ -97,6 +97,12 @@ input.search {
 .weather-item{
     display: flex;
     justify-content: space-between;
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    align-items: center;
+    padding: 10px;
+    margin: 10px 0px;
 }
 
 .current-weather1,
@@ -119,7 +125,6 @@ input.search {
     margin: 10px;
     background: rgba(255, 255, 255, 0.25);
     box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, 0.2);
-    ;
     border-radius: 10px;
     align-items: center;
 }
@@ -147,16 +152,18 @@ input.search {
     box-shadow: var(--boxshadow);
     padding: 20px;
     border-radius: 10px;
-    margin: 10px 5px;
+    margin: 10px 10px;
 }
 
-.air-q,
-.uv {
+.sunrise,
+.sunset {
     padding: 10px;
-    background: red;
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
 }
 
-.air-q {
+.sunrise{
     margin-bottom: 10px;
 }
 
